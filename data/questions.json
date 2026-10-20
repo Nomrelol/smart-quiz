@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "answer": "Paris",
+    "category": "Geography",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 2,
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Mars",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 3,
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "options": ["Ernest Hemingway", "F. Scott Fitzgerald", "Harper Lee", "John Steinbeck"],
+    "answer": "Harper Lee",
+    "category": "Literature",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4,
+    "question": "What is the chemical symbol for Gold?",
+    "options": ["Go", "Gd", "Au", "Ag"],
+    "answer": "Au",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "In which year did World War II end?",
+    "options": ["1943", "1944", "1945", "1946"],
+    "answer": "1945",
+    "category": "History",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 6,
+    "question": "What is the square root of 144?",
+    "options": ["10", "11", "12", "13"],
+    "answer": "12",
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 7,
+    "question": "Which programming language is Flask written in?",
+    "options": ["Java", "Ruby", "Python", "JavaScript"],
+    "answer": "Python",
+    "category": "Technology",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 8,
+    "question": "What does HTTP stand for?",
+    "options": ["HyperText Transfer Protocol", "High Tech Transfer Protocol", "HyperText Transmission Process", "High Traffic Transfer Protocol"],
+    "answer": "HyperText Transfer Protocol",
+    "category": "Technology",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 9,
+    "question": "Which country is the largest by land area?",
+    "options": ["Canada", "China", "USA", "Russia"],
+    "answer": "Russia",
+    "category": "Geography",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "What is the time complexity of Binary Search?",
+    "options": ["O(n)", "O(n log n)", "O(log n)", "O(1)"],
+    "answer": "O(log n)",
+    "category": "Technology",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 11,
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Michelangelo", "Raphael", "Leonardo da Vinci", "Donatello"],
+    "answer": "Leonardo da Vinci",
+    "category": "Art",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 12,
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Endoplasmic Reticulum"],
+    "answer": "Mitochondria",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 13,
+    "question": "Which sorting algorithm has worst-case O(n²) complexity?",
+    "options": ["Merge Sort", "Heap Sort", "Quick Sort", "Counting Sort"],
+    "answer": "Quick Sort",
+    "category": "Technology",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 14,
+    "question": "What is the largest ocean on Earth?",
+    "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "answer": "Pacific",
+    "category": "Geography",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "In Python, which keyword is used to define a function?",
+    "options": ["function", "fun", "def", "define"],
+    "answer": "def",
+    "category": "Technology",
+    "difficulty": "Easy"
+  }
+]
