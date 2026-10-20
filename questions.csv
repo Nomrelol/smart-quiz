@@ -1,0 +1,6 @@
+q,a,b,c,ans
+which is used to join URL to function in flask?,@app.route,app.map(),url_for,a
+if __name__ == '__main__' means,File is not directed,Flask is install,Server is online,c
+which function is used to start flask server URL?,app.start(),app.run(),run(app),b
+what does return '<p>Hello</p>' do?,show in Web Browser,save File,print in Terminal,a
+in which file we write Dependencies ?,package.json,requirements.txt,app.json,b
