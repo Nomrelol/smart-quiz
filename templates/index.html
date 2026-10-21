@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Smart Quiz{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="hero">
+        <h1 class="hero-title">Smart <span class="gradient-text">Quiz</span></h1>
+        <p class="hero-sub">Test your knowledge and climb the leaderboard!</p>
+    </div>
+
+    <div class="home-grid">
+        <!-- START QUIZ CARD -->
+        <div class="glass-card pad">
+            <h2 class="card-title">Start Quiz</h2>
+            <form method="POST" action="/" class="start-form">
+                <label class="field-label" for="name">Enter your name</label>
+                <input class="quiz-input" id="name" name="name" required placeholder="Your name" autocomplete="off">
+                <button class="btn-primary btn-full" type="submit"><span>Start</span></button>
+            </form>
+        </div>
+
+        <!-- TOP 5 CARD -->
+        <div class="glass-card pad">
+            <h2 class="card-title">Top 5</h2>
+
+            {% if board %}
+            <div class="board">
+                {% for player in board %}
+                <div class="lb-row {{ 'lb-top' if loop.index0 < 3 else '' }}">
+                    <div class="lb-medal">{{ ['\U0001F947','\U0001F948','\U0001F949'][loop.index0] if loop.index0 < 3 else loop.index ~ '.' }}</div>
+                    <div class="lb-info">
+                        <div class="lb-name">{{ player[0] }}</div>
+                    </div>
+                    <div class="lb-score">{{ player[1] }}/{{ total }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="empty">
+                <p>no score yet</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

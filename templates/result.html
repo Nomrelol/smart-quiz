@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Smart Quiz - Results{% endblock %}
+
+{% block content %}
+<div class="result-wrap">
+    <!-- Score hero -->
+    <div class="glass-card result-hero">
+        <div class="trophy-circle">&#127942;</div>
+        <p class="result-eyebrow">Quiz Completed</p>
+        <h1 class="result-title">
+            {% if percentage >= 70 %}Well Done, {{ name }}! &#127881;{% else %}Nice Try, {{ name }}!{% endif %}
+        </h1>
+
+        <div class="score-circle" style="--score-pct: {{ percentage }};">
+            <div class="score-inner">
+                <span class="score-value">{{ score }}<span class="score-total">/{{ total }}</span></span>
+                <span class="score-label">Score</span>
+            </div>
+        </div>
+
+        <div class="pct-badge">{{ percentage }}%</div>
+
+        <p class="feedback">
+            {% if percentage >= 70 %}Good job! Keep it up! &#128077;
+            {% else %}Nice try, play again!{% endif %}
+        </p>
+
+        <div class="saved">&#10003; Saved to leaderboard.csv</div>
+    </div>
+
+    <!-- Actions -->
+    <div class="result-actions">
+        <a class="btn-primary" href="/"><span>&#8592; Play Again</span></a>
+    </div>
+
+    <!-- Full leaderboard -->
+    <div class="glass-card result-board">
+        <h2 class="card-title">Full Leaderboard</h2>
+        <div class="board">
+            {% for player in board %}
+            <div class="lb-row {{ 'lb-top' if loop.index0 < 3 else '' }}">
+                <div class="lb-medal">{{ ['\U0001F947','\U0001F948','\U0001F949'][loop.index0] if loop.index0 < 3 else loop.index ~ '.' }}</div>
+                <div class="lb-info">
+                    <div class="lb-name">{{ player[0] }}</div>
+                </div>
+                <div class="lb-score">{{ player[1] }}/{{ total }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

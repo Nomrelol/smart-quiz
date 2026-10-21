@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Runs the Smart Quiz Flask server.
 cd "$(dirname "$0")"
 
 if [ -f "../venv/bin/python" ]; then

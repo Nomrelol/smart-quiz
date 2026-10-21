@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Smart Quiz - Questions{% endblock %}
+
+{% block content %}
+<div class="quiz-wrap">
+    <div class="quiz-head">
+        <div>
+            <p class="eyebrow">Smart Quiz</p>
+            <h1 class="greeting">Hello {{ name }}</h1>
+            <p class="subtitle-left">Choose the best answer for each question.</p>
+        </div>
+        <div class="count-badge">
+            <span class="count-number">{{ questions|length }}</span>
+            <span class="count-label">Questions</span>
+        </div>
+    </div>
+
+    <form method="POST" action="/submit">
+        <input type="hidden" name="name" value="{{ name }}">
+
+        {% for q in questions %}
+        <div class="question">
+            <span class="question-badge">Question {{ loop.index }}</span>
+            <p class="question-text">{{ q['q'] }}</p>
+
+            <label class="option-card">
+                <input type="radio" name="q{{ loop.index0 }}" value="a" required>
+                <span class="option-letter">A</span>
+                <span class="option-text">{{ q['a'] }}</span>
+            </label>
+            <label class="option-card">
+                <input type="radio" name="q{{ loop.index0 }}" value="b">
+                <span class="option-letter">B</span>
+                <span class="option-text">{{ q['b'] }}</span>
+            </label>
+            <label class="option-card">
+                <input type="radio" name="q{{ loop.index0 }}" value="c">
+                <span class="option-letter">C</span>
+                <span class="option-text">{{ q['c'] }}</span>
+            </label>
+        </div>
+        {% endfor %}
+
+        <button class="btn-primary btn-full" type="submit"><span>Submit</span></button>
+    </form>
+</div>
+{% endblock %}
