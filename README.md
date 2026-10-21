@@ -249,8 +249,9 @@ Rahul,3
 
 ## 🌿 Git Branches
 
-- **`main`** — the earlier full-stack **Next.js 16 + React + TypeScript + FastAPI** version.
-- **`flask-version`** *(current)* — the exact **Python Flask + CSV** version matching the presentation.
+- **`main`** *(default)* — the exact **Python Flask + CSV** version matching the presentation.
+- **`flask-version`** — dedicated branch tracking the **Flask + CSV** implementation.
+- **`nextjs-version`** — the full-stack **Next.js 16 + React 19 + TypeScript** implementation.
 
 ---
 
